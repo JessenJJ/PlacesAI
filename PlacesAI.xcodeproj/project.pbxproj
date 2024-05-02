@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B265DEF2BE3793500CC7DF1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265DEE2BE3793500CC7DF1 /* Constant.swift */; };
+		5B5585872BDB5EC7002415C0 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5585862BDB5EC7002415C0 /* FirebaseRemoteConfigSwift */; };
+		5B5585892BDB5EE7002415C0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5585882BDB5EE7002415C0 /* FirebaseRemoteConfig */; };
+		5B55858C2BDB608C002415C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B55858B2BDB608B002415C0 /* GoogleService-Info.plist */; };
+		5B55858F2BDB616A002415C0 /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B55858E2BDB616A002415C0 /* RemoteConfigService.swift */; };
 		5BE5433B2BD8B23100E3BE35 /* PlacesAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5433A2BD8B23100E3BE35 /* PlacesAIApp.swift */; };
 		5BE5433D2BD8B23100E3BE35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5433C2BD8B23100E3BE35 /* ContentView.swift */; };
 		5BE5433F2BD8B23500E3BE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE5433E2BD8B23500E3BE35 /* Assets.xcassets */; };
 		5BE543422BD8B23500E3BE35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE543412BD8B23500E3BE35 /* Preview Assets.xcassets */; };
 		5BE5434F2BD8B39700E3BE35 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE5434E2BD8B39700E3BE35 /* GoogleGenerativeAI */; };
-		5BE543522BD8B3C200E3BE35 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543512BD8B3C200E3BE35 /* Model.swift */; };
 		5BE543542BD8B56500E3BE35 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543532BD8B56500E3BE35 /* Place.swift */; };
+		5BE543562BD8B78B00E3BE35 /* PlaceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543552BD8B78B00E3BE35 /* PlaceVM.swift */; };
+		5BE543582BD8BA5D00E3BE35 /* PlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543572BD8BA5D00E3BE35 /* PlaceRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B265DEE2BE3793500CC7DF1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5B55858B2BDB608B002415C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B55858E2BDB616A002415C0 /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
 		5BE543372BD8B23100E3BE35 /* PlacesAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlacesAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE5433A2BD8B23100E3BE35 /* PlacesAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAIApp.swift; sourceTree = "<group>"; };
 		5BE5433C2BD8B23100E3BE35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5BE5433E2BD8B23500E3BE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE543412BD8B23500E3BE35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5BE543512BD8B3C200E3BE35 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5BE543532BD8B56500E3BE35 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		5BE543552BD8B78B00E3BE35 /* PlaceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVM.swift; sourceTree = "<group>"; };
+		5BE543572BD8BA5D00E3BE35 /* PlaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,18 +41,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5585892BDB5EE7002415C0 /* FirebaseRemoteConfig in Frameworks */,
 				5BE5434F2BD8B39700E3BE35 /* GoogleGenerativeAI in Frameworks */,
+				5B5585872BDB5EC7002415C0 /* FirebaseRemoteConfigSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B5585852BDB5EC7002415C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B55858D2BDB6150002415C0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5B55858E2BDB616A002415C0 /* RemoteConfigService.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		5BE5432E2BD8B23100E3BE35 = {
 			isa = PBXGroup;
 			children = (
 				5BE543392BD8B23100E3BE35 /* PlacesAI */,
 				5BE543382BD8B23100E3BE35 /* Products */,
+				5B5585852BDB5EC7002415C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +85,8 @@
 		5BE543392BD8B23100E3BE35 /* PlacesAI */ = {
 			isa = PBXGroup;
 			children = (
+				5B55858D2BDB6150002415C0 /* Config */,
+				5B55858B2BDB608B002415C0 /* GoogleService-Info.plist */,
 				5BE5434C2BD8B26A00E3BE35 /* ViewModel */,
 				5BE5434B2BD8B26000E3BE35 /* Resources */,
 				5BE5434A2BD8B25400E3BE35 /* App */,
@@ -79,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				5BE5433C2BD8B23100E3BE35 /* ContentView.swift */,
+				5BE543572BD8BA5D00E3BE35 /* PlaceRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,8 +117,8 @@
 		5BE543492BD8B24F00E3BE35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5BE543512BD8B3C200E3BE35 /* Model.swift */,
 				5BE543532BD8B56500E3BE35 /* Place.swift */,
+				5B265DEE2BE3793500CC7DF1 /* Constant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +142,7 @@
 		5BE5434C2BD8B26A00E3BE35 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5BE543552BD8B78B00E3BE35 /* PlaceVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,6 +165,8 @@
 			name = PlacesAI;
 			packageProductDependencies = (
 				5BE5434E2BD8B39700E3BE35 /* GoogleGenerativeAI */,
+				5B5585862BDB5EC7002415C0 /* FirebaseRemoteConfigSwift */,
+				5B5585882BDB5EE7002415C0 /* FirebaseRemoteConfig */,
 			);
 			productName = PlacesAI;
 			productReference = 5BE543372BD8B23100E3BE35 /* PlacesAI.app */;
@@ -164,6 +198,7 @@
 			mainGroup = 5BE5432E2BD8B23100E3BE35;
 			packageReferences = (
 				5BE5434D2BD8B39700E3BE35 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 5BE543382BD8B23100E3BE35 /* Products */;
 			projectDirPath = "";
@@ -181,6 +216,7 @@
 			files = (
 				5BE543422BD8B23500E3BE35 /* Preview Assets.xcassets in Resources */,
 				5BE5433F2BD8B23500E3BE35 /* Assets.xcassets in Resources */,
+				5B55858C2BDB608C002415C0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE543522BD8B3C200E3BE35 /* Model.swift in Sources */,
+				5B265DEF2BE3793500CC7DF1 /* Constant.swift in Sources */,
+				5BE543582BD8BA5D00E3BE35 /* PlaceRow.swift in Sources */,
 				5BE5433D2BD8B23100E3BE35 /* ContentView.swift in Sources */,
 				5BE5433B2BD8B23100E3BE35 /* PlacesAIApp.swift in Sources */,
+				5BE543562BD8B78B00E3BE35 /* PlaceVM.swift in Sources */,
 				5BE543542BD8B56500E3BE35 /* Place.swift in Sources */,
+				5B55858F2BDB616A002415C0 /* RemoteConfigService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +439,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
 		5BE5434D2BD8B39700E3BE35 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google-gemini/generative-ai-swift.git";
@@ -411,6 +458,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5B5585862BDB5EC7002415C0 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		5B5585882BDB5EE7002415C0 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
 		5BE5434E2BD8B39700E3BE35 /* GoogleGenerativeAI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5BE5434D2BD8B39700E3BE35 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
